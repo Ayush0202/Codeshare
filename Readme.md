@@ -1,15 +1,6 @@
 # Code Sharing Platform #
 
-### How to run the App ###
-
-``` 
-$ npm install
-```
-
-```
-$ nodemon server.js
-```
-
+Live Link - https://limitless-mountain-02271.herokuapp.com/
 
 
 
