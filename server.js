@@ -1,17 +1,16 @@
+const dotenv = require("dotenv");
 const express = require("express");
 const mongoose = require("mongoose");
 const Document = require("./models/Document");
+dotenv.config()
 
 const app = express();
 
-//to set ejs as viewing engine 
 app.set('view engine', 'ejs');
-//to get data to ejs file
 app.use(express.urlencoded({extended: true}));
-//to use style.css file 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://admin-ayush:test123@cluster0.ckdd9.mongodb.net/codeshareDB", {useUnifiedTopology: true, useNewUrlParser: true});
+mongoose.connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.ckdd9.mongodb.net/${process.env.DB_NAME}`, {useUnifiedTopology: true, useNewUrlParser: true});
 
 app.get("/", function(req, res){
     res.render("home-page");
