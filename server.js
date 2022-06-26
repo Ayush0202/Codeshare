@@ -10,7 +10,7 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.ckdd9.mongodb.net/codeshareDB`, {useUnifiedTopology: true, useNewUrlParser: true});
+mongoose.connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.ckdd9.mongodb.net/${process.env.DB_NAME}`, {useUnifiedTopology: true, useNewUrlParser: true});
 
 app.get("/", function(req, res){
     res.render("home-page");
@@ -67,6 +67,6 @@ app.get("/:id", async function(req, res){
     }   
 })
 
-app.listen(process.env.PORT || 4000, function(){
+app.listen(process.env.PORT || 3000, function(){
     console.log("Server has started successfully");
 });
