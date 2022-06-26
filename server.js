@@ -34,7 +34,9 @@ To make a new entry, Click "New"
 Type what you want others to see, click "Save", and then copy the URL.
 Send that to someone and they will see what you see
 
-To go back to Home Page, click "Codeshare"`
+To go back to Home Page, click "Codeshare"
+
+Happy Sharing :)`
 
     res.render("code-display", {code, language: "plaintext"});
 });
