@@ -6,11 +6,13 @@ An online code sharing platform for interviews, troubleshooting, teaching & more
 
 Project can be viewed [here](https://limitless-mountain-02271.herokuapp.com/)
 
-#### Features ####
+### Features ##
 - Creating and Saving new codes
 - Sharing code by sharing the unique URL
 
-#### To get Started and run the App Locally ####
+### Quick Start ###
+
+To run this app, clone the repositry and install dependencies
 
 ```
 $ git clone https://github.com/Ayush0202/Codeshare.git
@@ -18,11 +20,28 @@ $ git clone https://github.com/Ayush0202/Codeshare.git
 $ cd Codeshare
 
 $ npm install
-
-$ nodemon server.js
 ```
 
-#### Technologies Used ####
+The app requires you to connect MongoDB Atlas server to your project.
+
+Once Once credentials have been obtained, create a ```.env``` file and add the following environment variables:
+
+```
+DB_NAME = _NAME_OF_DATABASE
+DB_USERNAME = _USERNAME
+DB_PASSWORD = _PASSWORD
+```
+
+Start the Server
+
+```
+$ nodemon server.js 
+```
+
+Navigate to ``` https://localhost:3000 ```
+
+
+### Technologies Used ###
 
 - __ Frontend Technologies __ - EJS, CSS
 - __ Backend Technologies __ - Node.js, Express.js
