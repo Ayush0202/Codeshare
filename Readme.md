@@ -43,10 +43,10 @@ Navigate to ``` https://localhost:3000 ```
 
 ### Technologies Used ###
 
-- __ Frontend Technologies __ - EJS, CSS
-- __ Backend Technologies __ - Node.js, Express.js
-- __ Database __ - MongoDB
-- __ Deployed Used __ - Heroku
+- **Frontend Technologies** - EJS, CSS
+- **Backend Technologies** - Node.js, Express.js
+- **Database** - MongoDB
+- **Deployed Using** - Heroku
 
 <br>
 
