@@ -24,7 +24,7 @@ $ npm install
 
 The app requires you to connect MongoDB Atlas server to your project.
 
-Once Once credentials have been obtained, create a ```.env``` file and add the following environment variables:
+Once credentials have been obtained, create a ```.env``` file and add the following environment variables:
 
 ```
 DB_NAME = _NAME_OF_DATABASE
