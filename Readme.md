@@ -4,7 +4,7 @@
 
 An online code sharing platform for interviews, troubleshooting, teaching & more ...    
 
-Project can be viewed [here](https://codeshareweb.herokuapp.com/)
+Project can be viewed [here](https://codeshareweb.herokuapp.com/).
 
 ### Features ##
 - Creating and Saving new codes
